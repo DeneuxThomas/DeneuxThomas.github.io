@@ -13,6 +13,12 @@ if (window.DeviceOrientationEvent && window.DeviceMotionEvent) {
         document.getElementById("accelerationX").textContent = accelerationX;
         document.getElementById("accelerationY").textContent = accelerationY;
         document.getElementById("accelerationZ").textContent = accelerationZ;
+
+        const rotationAcceleration = event.rotationRate;
+
+        document.getElementById("rotationAccelerationAlpha").textContent = rotationAcceleration.alpha;
+        document.getElementById("rotationAccelerationBeta").textContent = rotationAcceleration.beta;
+        document.getElementById("rotationAccelerationGamma").textContent = rotationAcceleration.gamma;
     });
 } else {
     alert("L'API DeviceOrientation et/ou DeviceMotion n'est pas prise en charge par votre navigateur.");
