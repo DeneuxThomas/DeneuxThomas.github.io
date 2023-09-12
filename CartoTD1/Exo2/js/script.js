@@ -6,11 +6,13 @@ if (window.DeviceOrientationEvent && window.DeviceMotionEvent) {
     });
 
     window.addEventListener("devicemotion", function(event) {
-        const rotationAcceleration = event.rotationRate;
-        const translationAcceleration = event.acceleration;
+        const accelerationX = event.acceleration.x;
+        const accelerationY = event.acceleration.y;
+        const accelerationZ = event.acceleration.z;
 
-        document.getElementById("rotationAcceleration").textContent = JSON.stringify(rotationAcceleration);
-        document.getElementById("translationAcceleration").textContent = JSON.stringify(translationAcceleration);
+        document.getElementById("accelerationX").textContent = accelerationX;
+        document.getElementById("accelerationY").textContent = accelerationY;
+        document.getElementById("accelerationZ").textContent = accelerationZ;
     });
 } else {
     alert("L'API DeviceOrientation et/ou DeviceMotion n'est pas prise en charge par votre navigateur.");
