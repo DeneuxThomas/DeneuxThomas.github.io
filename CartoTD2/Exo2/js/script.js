@@ -1,7 +1,8 @@
 let map = L.map('map').setView([25.0, -70.0], 5);
 
-L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
-    attribution: '&copy; <a href="http://maps.stamen.com/">Stamen Design</a>, &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
 let myLatitude = 43.6174848;
