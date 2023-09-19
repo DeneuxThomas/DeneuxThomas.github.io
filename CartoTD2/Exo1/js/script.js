@@ -16,7 +16,6 @@ if ("geolocation" in navigator) {
         document.getElementById("getCurrentPositionlongitude").textContent = latitude;
         document.getElementById("getCurrentPositionlatitude").textContent = longitude;
 
-
         niceMarker.bindPopup('Centre-ville de Nice').openPopup();
 
         const marker = L.marker([latitude, longitude]).addTo(map);
