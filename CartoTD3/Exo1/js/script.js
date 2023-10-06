@@ -16,16 +16,41 @@ function drawCanvas() {
     ctx.arc(700, 100, 30, 0, Math.PI * 2);
     ctx.fill();
 
-    // Dessinez le bateau (rectangle et triangle)
-    ctx.fillStyle = 'brown';
-    ctx.fillRect(200, 250, 80, 20);
+    // Dessinez le bateau (triangle bas)
     ctx.fillStyle = 'red';
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.moveTo(200, 250);
-    ctx.lineTo(240, 200);
-    ctx.lineTo(280, 250);
+    ctx.moveTo(100, 250);
+    ctx.lineTo(250, 250);
+    ctx.lineTo(150, 320);
     ctx.closePath();
     ctx.fill();
+    ctx.stroke();
+
+    // Dessinez le bateau (triangle haut gauche)
+    ctx.fillStyle = 'darkred';
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(100, 240);
+    ctx.lineTo(150, 100);
+    ctx.lineTo(150, 240);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
+
+    // Dessinez le bateau (triangle haut droit)
+    ctx.fillStyle = 'darkred';
+    ctx.strokeStyle = 'black';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(250, 240);
+    ctx.lineTo(160, 100);
+    ctx.lineTo(160, 240);
+    ctx.closePath();
+    ctx.fill();
+    ctx.stroke();
 }
 
 drawCanvas();
