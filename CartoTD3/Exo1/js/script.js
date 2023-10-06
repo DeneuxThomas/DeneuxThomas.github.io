@@ -13,7 +13,7 @@ function drawCanvas() {
     // Dessinez le soleil (cercle jaune)
     ctx.fillStyle = 'yellow';
     ctx.beginPath();
-    ctx.arc(canvas.width - 100, 100, 30, 0, Math.PI * 2);
+    ctx.arc(700, 100, 30, 0, Math.PI * 2);
     ctx.fill();
 
     // Dessinez le bateau (rectangle et triangle)
