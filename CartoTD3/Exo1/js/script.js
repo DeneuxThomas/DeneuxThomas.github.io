@@ -30,19 +30,19 @@ function drawCanvas() {
 
 drawCanvas();
 
-const svg = document.getElementById('svg');
+// const svg = document.getElementById('svg');
 
-function drawSVG() {
-    // Votre code SVG ici
-    // Par exemple, vous pouvez dessiner une maison avec un rectangle et un triangle
-}
+// function drawSVG() {
+//     // Votre code SVG ici
+//     // Par exemple, vous pouvez dessiner une maison avec un rectangle et un triangle
+// }
 
-drawSVG();
+// drawSVG();
 
-canvas.addEventListener('click', () => {
+// canvas.addEventListener('click', () => {
 
-});
+// });
 
-svg.addEventListener('mouseover', () => {
+// svg.addEventListener('mouseover', () => {
 
-});
+// });
