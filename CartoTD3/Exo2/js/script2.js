@@ -8,9 +8,19 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+
+// Charger la texture
+const textureLoader = new THREE.TextureLoader();
+const texture = textureLoader.load('../img/raimbow.jpg');
+
+// Créer un matériau avec la texture
+const material = new THREE.MeshPhongMaterial({ map: texture });
+
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
+
+const light = new THREE.AmbientLight(0xffffff, .8);
+scene.add(light)
 
 camera.position.z = 4;
 
