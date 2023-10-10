@@ -12,7 +12,7 @@ const geometry = new THREE.BoxGeometry(1, 1, 1);
 
 // Charger la texture
 const textureLoader = new THREE.TextureLoader();
-const texture = textureLoader.load('../ressource/raimbow.jpg');
+const texture = textureLoader.load('/CartoTD3/Exo2/ressource/raimbow.jpg');
 
 // Créer un matériau avec la texture
 const material = new THREE.MeshPhongMaterial({ map: texture });
@@ -22,7 +22,7 @@ scene.add(cube);
 
 const loader = new GLTFLoader();
 
-loader.load('../ressource/moai.glb', (gltf) => {
+loader.load('/CartoTD3/Exo2/ressource/moai.glb', (gltf) => {
     const model = gltf.scene;
 
     model.position.set(10, -1, 0);
